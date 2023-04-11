@@ -17,3 +17,17 @@ CREATE TABLE treatments (
   name VARCHAR(250),
   PRIMARY KEY (id)
 );
+
+/* Create medical and treatments join table */
+CREATE TABLE medical_treatment_history (
+  id SERIAL PRIMARY KEY,
+  medical_histories_id INT FOREIGN KEY REFERENCES medical_histories(id),
+  treatment_id INT FOREIGN KEY REFERENCES treatments(id),
+);
+
+--- CREATE FK INDEXES
+CREATE INDEX ON medical_histories(patient_id);
+
+CREATE INDEX ON medical_treatment_history(medical_histories_id);
+
+CREATE INDEX ON medical_treatment_history(treatment_id);
