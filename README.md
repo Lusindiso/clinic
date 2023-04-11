@@ -54,8 +54,6 @@ After you're finished please remove all the comments and instructions!
 
 **[Clinic]** is a database project for clinic datas, using postgresSQL for database management system.It contains data about patients, treatments, invoices and so on .
 
-<img src="./img/erDiagram" align="center">.
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
