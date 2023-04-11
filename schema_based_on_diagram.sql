@@ -10,3 +10,10 @@ CREATE TABLE medical_histories (
   patient_id INT FOREIGN KEY REFERENCES patients(id),
   status VARCHAR(50),
 );
+
+CREATE TABLE treatments (
+  id SERIAL PRIMARY KEY,
+  type VARCHAR(250),
+  name VARCHAR(250),
+  PRIMARY KEY (id)
+);
